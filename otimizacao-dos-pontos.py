@@ -3,8 +3,8 @@ from scipy.optimize import differential_evolution
 import pandas as pd
 
 # Importação dos dados
-dados_bairros = pd.read_csv("bairros-agrupados-local.csv", sep=";", encoding='latin')
-dados_coleta = pd.read_csv("pontos-coleta-com-coords.csv", sep=";", encoding='latin')
+dados_bairros = pd.read_csv("dados/bairros-agrupados-local.csv", sep=";", encoding='latin')
+dados_coleta = pd.read_csv("dados/pontos-coleta-com-coords.csv", sep=";", encoding='latin')
 
 # Pontos dos bairros
 bairros = np.array(dados_bairros[['latitude', 'longitude']].values)
