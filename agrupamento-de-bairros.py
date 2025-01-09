@@ -4,7 +4,7 @@ from scipy.spatial.distance import pdist, squareform
 from scipy.cluster.hierarchy import linkage, fcluster
 
 # Carregar os dados
-df = pd.read_csv('../ibge-2022-com-coordenadas.csv', sep=';', encoding='latin')
+df = pd.read_csv('dados/ibge-2022-com-coordenadas.csv', sep=';', encoding='latin')
 
 # Função para calcular o centro de gravidade ponderado
 def centro_de_gravidade(group):
